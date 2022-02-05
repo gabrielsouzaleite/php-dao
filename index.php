@@ -24,4 +24,12 @@ require_once("config.php");
 //$usuario = new usuario();
 //$usuario->login("gabriel","0505");
 //echo $usuario;
+
+//inserindo usuario
+$aluno = new usuario();
+$aluno->setDeslogin("Antonio");
+$aluno->setDessenha("@ntonio");
+$aluno->insert();
+
+echo $aluno;
 ?>
