@@ -26,10 +26,18 @@ require_once("config.php");
 //echo $usuario;
 
 //inserindo usuario
-$aluno = new usuario();
-$aluno->setDeslogin("Antonio");
-$aluno->setDessenha("@ntonio");
-$aluno->insert();
+//$aluno = new usuario();
+//$aluno->setDeslogin("Antonio");
+//$aluno->setDessenha("@ntonio");
+//$aluno->insert();
+//echo $aluno;
 
-echo $aluno;
+//atualizando usuario
+$usuario = new usuario();
+
+$usuario->loadById(6);
+
+$usuario->update("Atena", "@tena");
+
+echo $usuario;
 ?>
